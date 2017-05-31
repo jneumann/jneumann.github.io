@@ -107,7 +107,12 @@
 </h2>
 <ul>
 	<p>
+		<h3>Integrating with different platforms</h3>
 		A lot of the problems that I have had in web development have come from integrating different platforms. Most recently, I integrated an ecommerce site with a fraud protection service. The difficulty came in, because the ecommerce platform wasn’t flexible enough to allow for testing of the service. Due to not being able to test bug fixes or feature requests, changes needed to be made incrementally so that the site was not disrupted.
+	</p>
+	<p>
+		<h3>Types Are There To Help You</h3>
+		Recently, I had to upgrade a webapp that I had built for a client about a year ago. At the time, this was one of the more intensive projects I had done. This web app took orders from Shopify, worked some math magic, and put some infomration in the databse telling them how much of an item they could buy next time. Something that was built in from day one was the ability for my client to put in shipments of products they received. Most recently, they wanted the ability to see only the last six weeks of orders thaty had received. When I started to work on the project, I didn't think anything of their request. After about four hours of debugging and testing their request started to seem a lot bigger. For some reason, when I was setting up the database, I set a date to a VARCHAR instead of a DATETIME. I learned a valuable lesson that day, even if you aren't using it, you should always use the types that are available to you.
 	</p>
 </ul>
 </div>
