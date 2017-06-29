@@ -216,6 +216,8 @@ header ul {
 
 header ul li {
 	list-style-type: none;
+	flex: 1;
+	text-align: center;
 }
 
 section {
