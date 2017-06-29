@@ -54,9 +54,24 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
 
+.background-image {
+	background-image: url(https://images.unsplash.com/photo-1495100793874-7f94aecae1fb?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=&bg=);
+  background-size: cover;
+	background-position: center;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+	opacity: .15;
+}
+
 body {
   background-color: #fff;
-  padding:50px;
+  padding: 0px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
@@ -110,6 +125,12 @@ a:hover small {
 .wrapper {
   width:860px;
   margin:0 auto;
+	z-index: 20;
+	position: absolute;
+	top: 20px;
+	left: calc(50% - 430px);
+	background-color: rgba(255, 255, 255, .75);
+	padding: 20px;
 }
 
 blockquote {
@@ -205,12 +226,6 @@ section {
 }
 
 @media print, screen and (max-width: 960px) {
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
   header, section, footer {
     float:none;
     position:static;
@@ -220,6 +235,11 @@ section {
   header a small {
     display:inline;
   }
+	.wrapper {
+    margin:0;
+		width: 640px;
+		left: calc(50% - 340px);
+	}
 
 }
 
@@ -231,12 +251,21 @@ section {
   pre, code {
     word-wrap:normal;
   }
+
+	.wrapper {
+		width: 480px;
+		left: calc(50% - 260px);
+	}
 }
 
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
   }
+	.wrapper {
+		width: 320px;
+		left: calc(50% - 170px);
+	}
 }
 
 @media print {
