@@ -64,7 +64,8 @@ designs ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-between
+  justify-content: space-between;
+  padding: 0
 }
 
 @media (max-width: 1300px) {
@@ -74,12 +75,12 @@ designs ul {
 }
 
 designs ul li {
-  flex: 0 1 30%
+  flex: 0 1 23%
 }
 
 @media (max-width: 1180px) {
   designs ul li {
-    flex: 0 1 45%
+    flex: 0 1 32%
   }
 }
 
@@ -89,7 +90,7 @@ designs ul li {
   }
 
   designs ul li {
-    flex: 0 1 75%;
+    flex: 0 1 48%;
     padding: 1.5rem 0 0;
     margin: auto
   }
