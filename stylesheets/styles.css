@@ -75,7 +75,8 @@ designs ul {
 }
 
 designs ul li {
-  flex: 0 1 23%
+  flex: 0 1 23%;
+  padding: 0 0 2rem;
 }
 
 @media (max-width: 1180px) {
